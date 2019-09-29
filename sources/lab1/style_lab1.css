@@ -1,0 +1,440 @@
+
+img.header{ /* Khung hinh dau trang */
+position: absolute;
+width: 1440px;
+height: 229px;
+left: 0px;
+top: 0px;
+
+background: url(images/header.png), #C4C4C4;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h2.text{ /* Thu vien sach */
+position: absolute;
+width: 302px;
+height: 65px;
+left: 264px;
+top: 1px;
+
+font-family: UTM Gradoo;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 65px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+}
+h1.text{ /* Chan troi moi */
+position: absolute;
+width: 803px;
+height: 114px;
+left: 515px;
+top: 46px;
+
+font-family: UTM Sarah;
+font-style: normal;
+font-weight: normal;
+font-size: 96px;
+line-height: 140px;
+color: rgba(255, 210, 0, 0.8);
+display: flex;
+align-items: center;
+letter-spacing: 0.15em;
+text-indent: 28px;
+}
+
+a.login{ /* Đăng nhập */
+position: absolute;
+width: 171px;
+height: 35px;
+left: 678px;
+top: 252px;
+
+font-family: UVN Bay Buom Hep;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 38px;
+display: flex;
+align-items: center;
+text-indent: 28px;
+text-decoration-line: underline;
+
+color: #000000;
+}
+
+input.search{ /* Hộp tìm kiếm */
+position: absolute;
+width: 605px;
+height: 47px;
+left: 835px;
+top: 246px;
+
+background: #F4F4F4;
+border: 1px solid #000000;
+box-sizing: border-box;
+border-radius: 6px;
+}
+
+p.userfind{ /* Nhập sách bạn muốn tìm */
+	
+position: absolute;
+width: 482px;
+height: 43px;
+left: 830px;
+top: 226px;
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-indent: 28px;
+
+color: #8D8D8D;
+}
+ img.search{
+	 /* Kính tìm kiếm */
+
+position: absolute;
+width: 67px;
+height: 40px;
+left: 1372px;
+top: 249px;
+
+
+border-radius: 5px;
+ }
+ 
+ p.border{
+	 /* Đường cắt */
+
+position: absolute;
+width: 1440px;
+height: 0px;
+left: 0px;
+top: 306px;
+
+border: 1px solid #C4C4C4;
+ }
+ 
+ a.menu{
+	 /* Nút menu */
+
+position: absolute;
+width: 294px;
+height: 42px;
+left: 48px;
+
+font-family: UVN Chinh Luan;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-indent: 28px;
+text-decoration-line: underline;
+
+color: #000000;
+
+ }
+ 
+ p.bg{
+	 /* Khung menu */
+
+position: absolute;
+width: 390px;
+height: 717px;
+left: 0px;
+top: 306px;
+
+background: linear-gradient(180deg, #F5C8A8 -3.91%, rgba(255, 255, 255, 0) 100%, rgba(252, 249, 249, 0.0677083) 100%), #FFFFFF;
+border: 1px solid #D0ACAC;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ 
+ img.dacnhantam{
+	 /* Dac Nhan Tam */
+
+position: absolute;
+width: 235px;
+height: 199px;
+left: 432px;
+top: 360px;
+
+background: url(Dac Nhan Tam.jpg);
+ }
+ 
+ img.maisang{
+	 /* Ngay Mai Troi Lai Sang */
+
+position: absolute;
+width: 175px;
+height: 188px;
+left: 837px;
+top: 371px;
+
+background: url(Ngay Mai Troi Lai Sang.jpg);
+ }
+ 
+ img.timbengiac{
+	 /* Tim Ve Ben Giac */
+
+position: absolute;
+width: 163px;
+height: 199px;
+left: 1209px;
+top: 359px;
+
+background: url(Tim Ve Ben Giac.jpg);
+ }
+ 
+ img.add{
+	 /* Adding book... */
+
+position: absolute;
+width: 137px;
+height: 217px;
+left: 481px;
+top: 669px;
+
+background: url(Add.png);
+ }
+ 
+ a.dacnhantam{
+	 /* Đắc nhân tâm */
+
+position: absolute;
+width: 198px;
+height: 51px;
+left: 444px;
+top: 558px;
+
+font-family: UVN Chu Ky;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-indent: 28px;
+
+color: #000000;
+
+ }
+ 
+ a.maisang{
+	 /* Ngày mai trời lại sáng */
+
+position: absolute;
+width: 257px;
+height: 115px;
+left: 784px;
+top: 552px;
+
+font-family: UVN Chu Ky;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+text-indent: 28px;
+
+color: #000000;
+
+ }
+ 
+ a.timbengiac{
+	 /* Tìm về bến giác */
+
+position: absolute;
+width: 251px;
+height: 53px;
+left: 1152px;
+top: 568px;
+
+font-family: UVN Chu Ky;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+text-indent: 28px;
+
+color: #000000;
+
+ }
+ 
+ a.add{
+	 /* Nhấn vào đây để tạo sách mới... */
+
+position: absolute;
+width: 277px;
+height: 45px;
+left: 411px;
+top: 903px;
+
+font-family: UVN Chu Ky;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+text-indent: 28px;
+text-decoration-line: underline;
+
+color: #000000;
+ }
+ 
+ h2.add{
+	 /* Thêm một cuốn sách bạn yêu thích tại đây */
+
+position: absolute;
+width: 908px;
+height: 77px;
+left: 464px;
+top: 320px;
+
+font-family: UTM Windsor BT;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 50px;
+display: flex;
+align-items: center;
+text-align: center;
+text-indent: 28px;
+
+color: #000000;
+
+ }
+ 
+ p.content{
+	 /* Tiêu đề, thể loại, tác giả, nhà XB, năm XB, mô tả */
+
+position: absolute;
+width: 261px;
+height: 24px;
+left: 417px;
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-indent: 28px;
+
+color: #000000;
+ }
+ 
+ input.rec{
+	 /* Khung điền nội dung trong add books */
+
+position: absolute;
+width: 718px;
+height: 24px;
+left: 654px;
+
+background: #FFFFFF;
+border: 1px solid #CDCDCD;
+box-sizing: border-box;
+ }
+ 
+ img.import{
+	 /* Import */
+
+position: absolute;
+width: 52px;
+height: 39px;
+left: 578px;
+top: 837px;
+
+background: url(import.png), #FFFFFF;
+ }
+ 
+ input.button{
+	 /* Nút nhấn */
+
+position: absolute;
+width: 133px;
+height: 47px;
+top: 945px;
+
+background: #C4C4C4;
+border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+ }
+ 
+ img.maisangbig{
+	 /* Ngay Mai Troi Lai Sang */
+
+position: absolute;
+width: 408px;
+height: 565px;
+left: 423px;
+top: 339px;
+
+background: url(Ngay Mai Troi Lai Sang.jpg);
+ }
+ 
+ a.edit{
+	 /* Sửa tiêu đề, sửa thể loại, NXB,... */
+
+position: absolute;
+width: 261px;
+height: 24px;
+left: 849px;
+
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-indent: 28px;
+text-decoration-line: underline;
+
+color: #000000;
+ }
+ 
+ a.removesure{
+	 /* Click vào đây để xác nhận loại bỏ sách ra khỏi hệ thống */
+
+position: absolute;
+width: 387px;
+height: 58px;
+left: 431px;
+top: 917px;
+
+font-family: Times New Roman;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+text-indent: 28px;
+text-decoration-line: underline;
+
+color: #000000;
+ }
+
