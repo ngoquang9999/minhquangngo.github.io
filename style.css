@@ -13,9 +13,10 @@ body{
 }
 h1#title{
 	text-align: center;
-	color: rgb(186, 80, 158);
+	color: rgb(185, 255, 255);
 	border-radius: 10px;
 	font-size: 40px;
+	background-color: rgba(0,0,0, 0.5);
 	margin: 20px 100px;  /* Can le khung p.t2 (20px la tren duoi, 100px la trai phai) */
 }
 #container {
@@ -26,8 +27,8 @@ h1#title{
 }
 #content {
     height: 60px;
-    border-left: 8px solid darkred;
-    border-bottom: 2px solid darkred;
+    border-left: 8px solid rgb(39, 129, 255);
+    border-bottom: 2px solid rgb(39, 53, 255);
 	
 }
 #content >ul> li{
@@ -35,7 +36,7 @@ h1#title{
     float: left;
     list-style-type: none;
     padding : 20px;
-	color: rgb(151, 77, 34);
+	color: rgb(85, 205, 255);
 }
 #content >ul >li >a {
     color: black;
@@ -47,7 +48,7 @@ h1#title{
     cursor: pointer;
 }
 #content > ul > li:hover {
-    background-color: brown;
+    background-color: rgb(85, 205, 255);
 }
 @keyframes showSub_menu {
     50% {
@@ -57,6 +58,8 @@ h1#title{
 #content > ul > li:hover #sub_list {
     display: block;
     background-color: #dadada;
+	 animation-name: showSub_menu;
+    animation-duration: 1s;
 }
 #content ul #sub_list {
     background-color: #dadada;
@@ -81,7 +84,7 @@ h1#title{
 
 }
 #content ul #sub_list .sub_menu:hover {
-    background-color: brown;
+    background-color: rgb(85, 205, 255);
 }
 #content ul #sub_list .sub_menu:hover  a {
     color:white;
@@ -118,7 +121,7 @@ div#menuexcersice{
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: rgb(226, 179, 200);
+  background-color: rgb(120, 208, 234);
 }
 
 /* Style the tab content */
@@ -133,7 +136,7 @@ div#menuexcersice{
 
 /* Nút Download */
 a.download{
-	background-color: rgb(198, 149, 23);
+	background-color: rgb(97, 185, 255);
   color: white;
   padding: 10px 15px;
   text-align: center;
@@ -146,7 +149,7 @@ div#Requiments{
 	font-family: Times New Roman;
 	text-align: left;
 	font-size: 20px;
-	color: rgb(183, 136, 98); 
+	color: rgb(25, 107, 255); 
 	margin: 20px 10px;
 }
 
@@ -156,7 +159,7 @@ h4.design{
 	font-family: Times New Roman;
 	text-align: left;
 	font-size: 40px;
-	color: rgb(221, 165, 116); 
+	color: rgb(25, 107, 255); 
 	margin: 20px 10px;
 }
 
