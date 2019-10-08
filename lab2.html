@@ -1,214 +1,371 @@
-<html>
-<head><title>Ngo Minh Quang</title>
-  <style>
-    *{box-sizing: border-box;}
-    nav {
-  float: left;
- 
-}
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  height: 300px; /* only for demonstration, should be removed */
-}
-table, tr, th{
-  border: 1px solid black;
-  border-color: black;
-}
-  </style>
-<link href="style.css" rel="stylesheet" media="screen,print" />
- <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<body>
-<h1 id="title">Welcome to Human Computer Interaction 2019</h1>
-<hr/>
-<div id="container">
-    <div id="content">
-        <ul>
-            <li> <a href="index.html">HOME</a></li>
-            <li>
-                <a href="">EXCERSICE</a>
-                <div id="sub_list">
-                    <ul >
-                        <li class="sub_menu"><a href="lab1.html">Lab 1</a></li>
-						<li class="sub_menu"><a href="lab2.html">Lab 2</a></li>
-						<li class="sub_menu"><a href="lab3.html">Lab 3</a></li>
-						<li class="sub_menu"><a href="lab4.html">Lab 4</a></li>
-						<li class="sub_menu"><a href="lab5.html">Lab 5</a></li>
-                </ul>
-                    </div>
-            </li>
-            <li><a href="about.html" target="_blank">ABOUT</a></li>
-        </ul>
-    </div>
-</div>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/skin.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="style_menu.css">
 
-<div id="menuexcersice">
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Requiments')">Requiments</button>
-  <button class="tablinks" onclick="openCity(event, 'User Scenario')">User Scenacio</button>
-  <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
-  <button class="tablinks" onclick="openCity(event, 'Implements')">Implements</button>
-</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="./script/index.js"></script>
 
-<div id="Requiments" class="tabcontent">
-  <p>(1) Tạo ra một user scenario
-<br/> (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện
-Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương
-ứng cho thiết kế này.
-<br/> Upload lên Azure / Github: trong file html có chèn hình ảnh của
-user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
-</div>
+    <style>
+        *{box-sizing: border-box;}
+        nav {
+      float: left;
+     
+    }
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      height: 300px; /* only for demonstration, should be removed */
+    }
+    table, tr, th{
+      border: 1px solid black;
+      border-color: black;
+      text-align: center;
+    }
+      </style>
+</head>
 
-<div id="User Scenario" class="tabcontent" style="text-align: center">
-  <img src="images/lab2_Scenario.png" width="800px" height="400px"/>
-</div>
+<body id="wrapper" class="blue">
 
-<div id="Design" class="tabcontent">
-  <div style="text-align: center">
-    <div id="col1"><p style="color: rgb(60, 132, 240);font-size: 30px;padding: 20px 0px">Sketch</p>
-<img src="images/lab2_paper.jpg" width="800px" height="400px"><br/>
-<a class="download" href="images/lab2_paper.jpg" download="lab2_paper.jpg" style="margin: 20px;">Download</a></div><br/>
-<hr/>
-    <div id="col2"><p style="color: rgb(60, 132, 240);font-size: 30px;margin: 20px 0px">Design</p>
-      <img src="images/lab2_hinhfigma.PNG" width="800px" height="500px"><br/>
-      <a class="download" href="17130179_design/lab2.fig" style="margin: 20px;">Download</a>
-      <br/>
-      Click here to download all data:
-      <a class="download" href="data_lab2.rar">Download All</a>   </div>
-  </div>
-</div>
-
-<div id="Implements" class="tabcontent">
-
-<div id="page" style="padding: 30px;">
-  <img src="sources\lab2\images\header.PNG">
-<div id="tab1" style="text-align: right;">
-  <div id="tab1right" style="padding: 0px 20px;">
-    <p><a href="#"><u>Chào Ngô Quang</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><u>Đăng xuất</u></a></p>
-  </div>
-</div>
-<div id="tab2" style="text-align: left;">
-    <div id="menuexcersice" style="padding: 10px 0px;">
-        <div class="tab">
-          <button class="tablinks" style="border: 3px">Home</button>
-          <button class="tablinks">Tin tức</button>
-          <button class="tablinks">Thời KB</button>
-          <button class="tablinks" style="background-color: rgba(61, 94, 243, 0.781); color:white">Xem điểm</button>
-          <button class="tablinks">Xem lịch thi</button>
-          <button class="tablinks">Sửa TT tài khoản</button>
+    <section id="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                    <ul class="contact_links">
+                        <li><i class="fa fa-phone"></i><a href="#">+84 982 642 951</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="#">ngominhquang9999@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="social_links">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-</div>
-</div>
-<section id="center" style="height: 500px">
+        
 
-  <nav id="center_left" style="width:220px;height:502px; margin-right: auto">
-    <p style="
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(182, 242, 255, 0) 0.01%, #9EB6F3 100%);
-    border: 1px solid #C1C1C1;
-    box-sizing: border-box;
-    height: 502px;
-    width: 222px;
-    "><br/>&nbsp;&nbsp;&nbsp;Chọn học kỳ:<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#" style="color: black">Học kỳ I</a><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="#" style="color: red">Học kỳ II</a><br/><br/></p>
-  </nav>
-  
-  <article style="text-align: center">
-      <table style="width:100%">
-          <caption style="font-size:20px;"><b>BẢNG ĐIỂM</b></caption>
-          <tr style="font-size:15px;color:white;background-color: rgb(0, 0, 255);">
-            <th>Môn</th>
-            <th>M</th>
-          <th>KTDX</th>
-            <th>15'</th>
-          <th>1 tiết</th>
-          <th>Thi</th>
-          <th>Tổng kết</th>
-          </tr>
-          <tr>
-              <th>Toán</th>
-              <th>10</th>
-            <th>8</th>
-              <th>7</th>
-            <th>10</th>
-            <th>9</th>
-            <th></th>
-          </tr>
-          <tr>
-              <th>Vật Lý</th>
-              <th>0</th>
-            <th>2</th>
-              <th>10</th>
-            <th>6</th>
-            <th>5</th>
-            <th></th>
-          </tr>
-          <tr>
-              <th>Hóa Học</th>
-              <th></th>
-            <th>9</th>
-              <th>10</th>
-            <th>8</th>
-            <th></th>
-            <th></th>
-          </tr>
-          <tr>
-              <th>Sinh Học</th>
-              <th>9</th>
-            <th>10</th>
-              <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-          <tr>
-              <th>Ngữ Văn</th>
-              <th>7</th>
-            <th>7</th>
-              <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-          <tr>
-              <th>Lịch Sử</th>
-              <th></th>
-            <th></th>
-              <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-          </tr>
-        </table>
-        <p><a href="#"><u>In bảng điểm</u></a></p>
-  </article>
- 
-</section>
-</div>
-</div>
+    </section>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+                        <a class="navbar-brand" href="#">
+                            <h1>HCI</h1><span>2019</span></a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse navbar-right">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="index.html">Home</a></li>
+                            <li ><a href="lab1.html">Lab 1</a></li>
+                            <li class="active"><a href="lab2.html">Lab 2</a></li>
+                            <li><a href="lab3.html">Lab 3</a></li>
+                            <li><a href="lab4.html">Lab 4</a></li>
+                            <li><a href="lab5.html">Lab 5</a></li>
+                            <li><a href="lab6.html">Lab 6</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!--/.nav-ends -->
+    </header>
+    <section id="top_banner">
+        <div class="banner">
+            <div class="inner text-center">
+                <h2>Ngô Minh Quang - 17130179</h2>
+            </div>
+        </div>
+        <div class="page_info">
+            <div class="container">
+                <div class="row">
+                    <div id="menuexcersice">
+                        <div class="tab">
+                          <button class="tablinks" onclick="openCity(event, 'Requiments')">Requiments</button>
+                          <button class="tablinks" onclick="openCity(event, 'User Scenario')">User Scenacio</button>
+                          <button class="tablinks" onclick="openCity(event, 'Design')">Design</button>
+                          <button class="tablinks" onclick="openCity(event, 'Implements')">Implements</button>
+                        </div>
+                        
+                        <div id="Requiments" class="tabcontent">
+                          <p>(1) Tạo ra một user scenario
+                        <br/> (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện
+                        Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương
+                        ứng cho thiết kế này.
+                        <br/> Upload lên Azure / Github: trong file html có chèn hình ảnh của
+                        user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
+                        </div>
+                        
+                        <div id="User Scenario" class="tabcontent" style="text-align: center">
+                          <img src="images/lab2_Scenario.png" width="800px" height="400px"/>
+                        </div>
+                        
+                        <div id="Design" class="tabcontent">
+                          <div style="text-align: center">
+                            <div id="col1"><p style="color: rgb(60, 132, 240);font-size: 30px;padding: 20px 0px">Sketch</p>
+                        <img src="images/lab2_paper.jpg" width="800px" height="400px"><br/>
+                        <a class="download" href="images/lab2_paper.jpg" download="lab2_paper.jpg" style="margin: 20px;">Download</a></div><br/>
+                        <hr/>
+                            <div id="col2"><p style="color: rgb(60, 132, 240);font-size: 30px;margin: 20px 0px">Design</p>
+                              <img src="images/lab2_hinhfigma.PNG" width="800px" height="500px"><br/>
+                              <a class="download" href="17130179_design/lab2.fig" style="margin: 20px;">Download</a>
+                              <br/>
+                              Click here to download all data:
+                              <a class="download" href="data_lab2.rar">Download All</a>   </div>
+                          </div>
+                        </div>
+                        
+                        <div id="Implements" class="tabcontent" style="background-color: white">
+                        
+                        <div id="page" style="padding: 30px;">
+                          <img src="sources\lab2\images\header.PNG">
+                        <div id="tab1" style="text-align: right;">
+                          <div id="tab1right" style="padding: 0px 20px;">
+                            <p><a href="#"><u>Chào Ngô Quang</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><u>Đăng xuất</u></a></p>
+                          </div>
+                        </div>
+                        <div id="tab2" style="text-align: left;">
+                            <div id="menuexcersice" style="padding: 10px 0px;">
+                                <div class="tab">
+                                  <button class="tablinks" style="border: 3px">Home</button>
+                                  <button class="tablinks">Tin tức</button>
+                                  <button class="tablinks">Thời KB</button>
+                                  <button class="tablinks" style="background-color: rgba(61, 94, 243, 0.781); color:white">Xem điểm</button>
+                                  <button class="tablinks">Xem lịch thi</button>
+                                  <button class="tablinks">Sửa TT tài khoản</button>
+                                </div>
+                        </div>
+                        </div>
+                        <section id="center" style="height: 500px">
+                        
+                          <nav id="center_left" style="width:220px;height:502px; margin-right: auto">
+                            <p style="
+                            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(182, 242, 255, 0) 0.01%, #9EB6F3 100%);
+                            border: 1px solid #C1C1C1;
+                            box-sizing: border-box;
+                            height: 502px;
+                            width: 222px;
+                            "><br/>&nbsp;&nbsp;&nbsp;Chọn học kỳ:<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" style="color: black">Học kỳ I</a><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#" style="color: red">Học kỳ II</a><br/><br/></p>
+                          </nav>
+                          
+                          <article>
+                              <table style="width:100%">
+                                  <caption style="font-size:20px;text-align: center"><b>BẢNG ĐIỂM</b></caption>
+                                  <tr style="font-size:15px;color:white;background-color: rgb(0, 0, 255);">
+                                    <th>Môn</th>
+                                    <th>M</th>
+                                  <th>KTDX</th>
+                                    <th>15'</th>
+                                  <th>1 tiết</th>
+                                  <th>Thi</th>
+                                  <th>Tổng kết</th>
+                                  </tr>
+                                  <tr>
+                                      <th>Toán</th>
+                                      <th>10</th>
+                                    <th>8</th>
+                                      <th>7</th>
+                                    <th>10</th>
+                                    <th>9</th>
+                                    <th></th>
+                                  </tr>
+                                  <tr>
+                                      <th>Vật Lý</th>
+                                      <th>0</th>
+                                    <th>2</th>
+                                      <th>10</th>
+                                    <th>6</th>
+                                    <th>5</th>
+                                    <th></th>
+                                  </tr>
+                                  <tr>
+                                      <th>Hóa Học</th>
+                                      <th></th>
+                                    <th>9</th>
+                                      <th>10</th>
+                                    <th>8</th>
+                                    <th></th>
+                                    <th></th>
+                                  </tr>
+                                  <tr>
+                                      <th>Sinh Học</th>
+                                      <th>9</th>
+                                    <th>10</th>
+                                      <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                  </tr>
+                                  <tr>
+                                      <th>Ngữ Văn</th>
+                                      <th>7</th>
+                                    <th>7</th>
+                                      <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                  </tr>
+                                  <tr>
+                                      <th>Lịch Sử</th>
+                                      <th></th>
+                                    <th></th>
+                                      <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                  </tr>
+                                </table>
+                                <p style="text-align: center"><a href="#"><u>In bảng điểm</u></a></p>
+                          </article>
+                         
+                        </section>
+                        </div>
+                        </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+    
+    
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Address</h4>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
+                        </p>
+                        <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Useful Links</h4>
+                        <hr>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Sign In</a></li>
+                            <li><a href="#">Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 block">
+                    <div class="footer-block">
+                        <h4>Community</h4>
+                        <hr>
+                        <ul class="footer-links">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Free Goods</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                    <div class="footer-block">
+                        <h4>Recent Posts</h4>
+                        <hr>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+                            <li>
+                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                <p class="post-date">May 25, 2017</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+    </section>
 
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+    <section id="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+                    Developed by <a href="#">Aspire Software Solutions</a> designed by <a href="#">Designing Team</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-</body>
-</html>
+    <div id="panel">
+        <div id="panel-admin" style="display: none;">
+            <div class="panel-admin-box">
+                <div id="tootlbar_colors">
+                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                </div>
+            </div>
+
+        </div>
+        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+
+</body></html>
