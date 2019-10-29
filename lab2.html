@@ -18,6 +18,7 @@
         nav {
       float: left;
       
+      
      
     }
     article {
@@ -31,7 +32,11 @@
       border-color: black;
       text-align: center;
     }
-
+    header#tab {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
    
       </style>
 </head>
@@ -62,7 +67,7 @@
 
     </section>
 
-    <header>
+    <header id="tab">
         <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="row">
@@ -143,18 +148,27 @@
                                                   
                                                   
                                                    <div id="home3" class="container tab-pane">
-                                                      <div style="text-align: center">
-                                                          <div id="col1"><p style="color: rgb(60, 132, 240);font-size: 25px;padding: 20px 0px">Sketch</p>
-                                                      <img src="images/lab2_paper.jpg" width="800px" height="400px"><br/>
-                                                      <a class="download" href="images/lab2_paper.jpg" download="lab2_paper.jpg" style="margin: 20px;">Download</a></div><br/>
-                                                      <hr/>
-                                                          <div id="col2"><p style="color: rgb(60, 132, 240);font-size: 25px;margin: 20px 0px">Design</p>
-                                                            <img src="images/lab2_hinhfigma.PNG" width="800px" height="500px"><br/>
-                                                            <a class="download" href="17130179_design/lab2.fig" style="margin: 20px;">Download</a>
-                                                            <br/>
-                                                            Click here to download all data:
-                                                            <a class="download" href="data_lab2.rar">Download All</a>   </div>
+                                                      <div class="row">
+                                                          <div class="col-sm-6">
+                                                              <p style="color: rgb(60, 132, 240);font-size: 20px;padding: 20px 0px">Sketch:</p>
+                                                              <img src="images/lab2_paper.jpg" width="100%"><br/>
+                                                          </div>
+                                                          <div class="col-sm-6">
+                                                                  <p style="color: rgb(60, 132, 240);font-size: 20px;margin: 20px 0px">Design:</p>
+                                                                  <a href="17130179_design/lab2.fig"><button type="button" class="btn btn-primary btn-sm" style="margin: 3% 0%;">Download</button></a>
+                                                                  <br/>
+                                                            <img src="images/lab2_hinhfigma.PNG" width="100%"><br/>
+                                                          </div>
                                                         </div>
+                                                  <div style="text-align: center">
+                                                          <div id="col1">
+                                                       <br/>
+                                                      <hr/>
+                                                          <div id="col2">
+                                                            Click here to download all data:
+                                                            <a href="data_lab2.rar"><button type="button" class="btn btn-primary btn-sm" style="padding: 2% 2%;margin-left: 1%;">Download All</button></a>  </div>
+                                                        </div>
+                                            </div>
                                                   </div>
                                                    
                                                   
@@ -286,87 +300,9 @@
     </section>
     
     
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Address</h4>
-                        <hr>
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
-                        </p>
-                        <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a>
-                    </div>
-                </div>
+   
 
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Useful Links</h4>
-                        <hr>
-                        <ul class="footer-links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Sign In</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Community</h4>
-                        <hr>
-                        <ul class="footer-links">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Free Goods</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
-                    <div class="footer-block">
-                        <h4>Recent Posts</h4>
-                        <hr>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li>
-                            <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li>
-                            <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <section id="bottom-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
-                    Developed by <a href="#">Aspire Software Solutions</a> designed by <a href="#">Designing Team</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
 
     <div id="panel">
         <div id="panel-admin" style="display: none;">
