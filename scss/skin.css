@@ -6,7 +6,6 @@ body.cyan .btn-primary {
 	padding: 15px 50px;
 	border-radius: 0px;
 	font-weight: bold;
-	text-transform: uppercase;
 	color: #1abac8;
 	background-color: #fff;
 	border-color: #1abac8;
@@ -451,10 +450,9 @@ body.blue span {
 	color: #159eee;
 }
 body.blue .btn-primary {
-	padding: 15px 50px;
-	border-radius: 0px;
+	padding: 7px 10px;
+	border-radius: 4px;
 	font-weight: bold;
-	text-transform: uppercase;
 	color: #159eee;
 	background-color: #fff;
 	border-color: #159eee;
