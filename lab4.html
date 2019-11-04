@@ -13,11 +13,73 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
           header#tab {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:  rgb(160, 160, 160);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:  rgb(160, 160, 160);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: green;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
     </style>
 </head>
@@ -146,7 +208,154 @@
                                                    
                                                   
                                                   <div id="home3" class="container tab-pane">
-                                                     
+                                                      <div id="headerimp" style="background-color: black;position: relative;">
+                                                     <p style="font-size: 200%;font-family: Times New Roman;color: white;"><img src="sources\lab4\images\logo.png" style="width: 12%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Green Agriculture</p>
+                                                     <div style="position: absolute;
+                                                     bottom: 9%;
+                                                     right: 6%;width: 110%;">
+                                                     <div class="row" style="color: white;">
+                                                         <div class="col-sm-8"></div>
+                                                         <div class="col-sm-1" style="margin: auto;">
+                                                            <a href="#"><p>Contact</p></a>
+                                                         </div>
+                                                         <div class="col-sm-1">
+                                                                <a href="#"><p>Sign up</p></a>
+                                                            </div>
+                                                            <div class="col-sm-1">
+                                                                    <a href="#"><p>Sign in</p></a>
+                                                                </div>
+                                                                <div class="col-sm-1">
+                                                                        <button type="button" class="btn btn-warning"style="color:black">Download News</button>
+                                                                    </div>
+                                                                    
+                                                     </div>
+                                                    </div>
+                                                    </div>
+                                                    <div id="menuimp">
+                                                            <div class="navbar">
+                                                                    <a href="#home">Home</a>
+                                                                    <div class="dropdown">
+                                                                    <button class="dropbtn" onclick="myFunction()">Domestic
+                                                                      <i class="fa fa-caret-down"></i>
+                                                                    </button>
+                                                                    <div class="dropdown-content" id="myDropdown">
+                                                                      <a href="#">Link 1</a>
+                                                                      <a href="#">Link 2</a>
+                                                                      <a href="#">Link 3</a>
+                                                                    </div>
+                                                                    </div> 
+                                                                    <div class="dropdown">
+                                                                            <button class="dropbtn" onclick="myFunction()">Foreign
+                                                                              <i class="fa fa-caret-down"></i>
+                                                                            </button>
+                                                                            <div class="dropdown-content" id="myDropdown">
+                                                                              <a href="#">Link 1</a>
+                                                                              <a href="#">Link 2</a>
+                                                                              <a href="#">Link 3</a>
+                                                                            </div>
+                                                                            </div> 
+                                                                            <a href="#home">Share Corner</a>
+                                                                  </div>
+                                                    </div>
+                                                    <div class="container" style="background-color: rgb(66, 66, 66);">
+                                                    <div id="navigationimp">
+                                                        <br/>
+                                                        <p style="margin-left: 2%; color:rgb(160, 160, 160);"><a href="#">Home</a>/<a href="#">Domestic</a>/Fruits News</p><br/>
+                                                    </div>
+                                                    <div class="container" style="width: 75%;">
+                                                           
+                                                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                                              <!-- Indicators -->
+                                                              <ol class="carousel-indicators">
+                                                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                              </ol>
+                                                          
+                                                              <!-- Wrapper for slides -->
+                                                              <div class="carousel-inner">
+                                                          
+                                                                <div class="item active">
+                                                                  <img src="sources\lab4\images\oi.jpg" alt="Los Angeles" style="width:100%;">
+                                                                 <a href="#"> <div class="carousel-caption">
+                                                                        <p style="font-size: 230%;font-family: Times New Roman;color:white; margin-top: 50%;">Protect your fruits may you unknow</p><br/>
+                                                                    <p>In crop production, choosing a healthy plant for the sweet fruit season has been a marvelous process for growers. However, at present, some export fruits of Vietnam are being damaged by the fungus and bacteria, which significantly reduce the commercial value and fruit quality.</p>
+                                                                  </div></a>
+                                                                </div>
+                                                          
+                                                                <div class="item">
+                                                                        <img src="sources\lab4\images\mit.jpg" alt="Los Angeles" style="width:100%;">
+                                                                        <a href="#"> <div class="carousel-caption">
+                                                                              <p style="font-size: 230%;font-family: Times New Roman;color:white;margin-top: 50%;">15 benefits of jackfruit you did not expect</p><br/>
+                                                                          <p>Jackfruit not only appeals to people eating with a juicy taste. Benefits of jackfruit bring equally equally attractive as you eat it.</p>
+                                                                        </div></a>
+                                                                </div>
+                                                              
+                                                                <div class="item">
+                                                                        <img src="sources\lab4\images\thanhlong.jpg" alt="Los Angeles" style="width:100%;">
+                                                                        <a href="#">  <div class="carousel-caption">
+                                                                              <p style="font-size: 230%;font-family: Times New Roman;color:white;margin-top: 40%;">These people eat dragon fruit extremely dangerous, need to know that to avoid</p><br/>
+                                                                          <p>Dragon fruit has the effect of reducing blood pressure, reducing blood fat, laxative, detoxifying, bright eyes ... Although this fruit has many good uses for health, but not everyone 'fits' to eat the dragon.</p>
+                                                                        </div></a>
+                                                                </div>
+                                                            
+                                                              </div>
+                                                          
+                                                              <!-- Left and right controls -->
+                                                              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                                                <span class="sr-only">Previous</span>
+                                                              </a>
+                                                              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                                                <span class="sr-only">Next</span>
+                                                              </a>
+                                                            </div>
+                                                          </div>
+                                                          <br/>
+                                                          
+                                                </div>
+                                                    <div class="row">
+                                                       
+                                                        <div class="col-sm-10">
+                                                                <a href="#">  <div>
+                                                                <div style="margin:4%">
+                                                            <img src="sources\lab4\images\saurieng.jpg" style="float:left;width: 30%;"></div>
+                                                            <div style="margin: 4%;">
+                                                            <p style="font-size: 20px;font-family: Times New Roman; font-weight: bold;">Durian fruit worth 1.1 bilions, with money is unlikely to have been eaten</p>
+                                                            <p>At the durian auction in Thailand, this particular durian set a world record for $ 48,000 (over 1.1 billion).</p></div>
+                                                            </div></a>
+                                                            <br/>
+
+                                                           <a href="#">  <div>
+                                                                    <div style="margin:4%">
+                                                                <img src="sources\lab4\images\mangcut.jpg" style="float:left;width: 30%;"></div>
+                                                                <div style="margin: 4%;">
+                                                                <p style="font-size: 20px;font-family: Times New Roman; font-weight: bold;">Caution: the side effects when eating mangosteen</p>
+                                                                <p>Mangosteen is a popular fruit in Vietnam. There are many healthy nutrients, however, one should not eat too much mangosteen at once.</p></div>
+                                                                </div></a>
+                                                                <br/>
+                                                                <a href="#">  <div>
+                                                                        <div style="margin:4%">
+                                                                    <img src="sources\lab4\images\xoai.jpg" style="float:left;width: 30%;"></div>
+                                                                    <div style="margin: 4%;">
+                                                                    <p style="font-size: 20px;font-family: Times New Roman; font-weight: bold;">Mango planting and care process</p>
+                                                                    <p>Mangoes are easy to grow, however, to take care of them properly and bring high yields, perhaps many people still do not know. Today, we would like to introduce to you the process of planting and tending mango trees with high efficiency.</p></div>
+                                                                    </div></a>
+                                                                    <br/><br/>
+                                                                    <a href="#"> <div>
+                                                                            <div style="margin:4%">
+                                                                       <p style="font-size: 20px;font-family: Times New Roman;">Read more...</p></div>
+                                                                        </div></a>
+                                                                        <br/>
+                                                        </div>
+                                                        <div class="col-sm-2"></div>
+                                                        
+
+                                                    </div>
+
+                                                    
+
                                                     </div>
                                               
                                                 
@@ -204,6 +413,22 @@
           evt.currentTarget.className += " active";
         }
         </script>
-
+        <script>
+                /* When the user clicks on the button, 
+                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                  document.getElementById("myDropdown").classList.toggle("show");
+                }
+                
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(e) {
+                  if (!e.target.matches('.dropbtn')) {
+                  var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                      myDropdown.classList.remove('show');
+                    }
+                  }
+                }
+                </script>
 
 </body></html>
