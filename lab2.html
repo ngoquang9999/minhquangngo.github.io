@@ -39,22 +39,6 @@
 }
    
       </style>
-
-<script>
-  function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  </script>
 </head>
 
 <body id="wrapper" class="blue">
@@ -121,191 +105,167 @@
         </div>
         <div class="page_info">
             <div class="container">
-                <div class="row">
-                    <div id="colorlib-main">
-                        <div class="list_wrap">
-                                          <!-- Tab links -->
-                                          <div class="group-tabs">
-                                              <!-- Nav tabs -->
-                                              <ul class="nav nav-tabs" role="tablist">
-                                                  <li class="nav-item active">
-                                                      <a class="nav-link active" data-toggle="tab" href="#home1" aria-expanded="true">Requirement</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                      <a class="nav-link" data-toggle="tab" href="#home2">User Scenario</a>
-                                                  </li>
-          
-                                                  <li class="nav-item">
-                                                      <a class="nav-link" data-toggle="tab" href="#home3">Design</a>
-                                                  </li>
-                                                  <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#home4">Implementation</a>
-                                                    </li>
-          
-                                                  
-                                              </ul>
-          
-                                              <!-- Tab panes -->
-                                            <div class="tab-content">
-                                                  <div id="home1" class="container tab-pane active">
-                                                      <div style="font-size:25px;font-family:Tahoma;">Yêu cầu:</div><br/> 
-                                                      <p>(1) Tạo ra một user scenario
-                                                          <br/> (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện
-                                                          Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương
-                                                          ứng cho thiết kế này.
-                                                          <br/> Upload lên Azure / Github: trong file html có chèn hình ảnh của
-                                                          user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
-                                                  </div>
-                                                  <div id="home2" class="container tab-pane text-center">
-                                                      <img src="images/lab2_Scenario.png" width="800px" height="400px"/>
-                                                  </div>
-                                                  
-                                                  
-                                                  
-                                                   <div id="home3" class="container tab-pane">
-                                                    <div class="row">
-                                                      <div class="col-sm-6">
-                                                          <p style="font-size: 15px;padding: 20px 0px; float: left;">Sketch:</p>
-                                                          <a href="images\lab2_paper.jpg" download><button type="button" class="btn btn-primary btn-sm" style="margin: 3% 0%;float: right;">Download</button></a>
-                                                          <img src="images\lab2_paper.jpg" width="100%" height="52%"><br/>
-                                                      </div>
-                                                      <div class="col-sm-6">
-                                                              <p style="font-size: 15px;margin: 20px 0px; float:left">Design:</p>
-                                                              <a href="17130179_design\lab2.fig"><button type="button" class="btn btn-primary btn-sm" style="margin: 3% 0%;float: right;">Download</button></a>
-                                                              <br/><br/>
-                                                        <img src="images\lab2_hinhfigma.png" width="100%"><br/>
-                                                      </div>
-                                                    </div>
-                                                    <hr/>
-                                              <div style="text-align: center">
-                                                      <div id="col1">
-                                                      <div id="col2">
-                                                        <a href="data_lab2.rar"><button type="button" class="btn btn-primary btn-sm" style="font-size: 155%;padding: 1% 2%;text-align: center;">Download All</button></a>  </div>
-                                                    </div>
-                                        </div>
-                                                  </div>
-                                                   
-                                                  
-                                                  <div id="home4" class="container tab-pane">
-                                                      <div id="page" style="padding: 30px;">
-                                                          <img src="sources\lab2\images\header.PNG" width="100%">
-                                                        <div id="tab1" style="text-align: right;">
-                                                          <div id="tab1right" style="padding: 0px 20px;">
-                                                            <p><a href="#"><u>Chào Ngô Quang</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><u>Đăng xuất</u></a></p>
-                                                          </div>
-                                                        </div>
-                                                        <div id="tab2" style="text-align: left;">
-                                                            <div id="menuexcersice" style="padding: 10px 0px;">
-                                                                <div class="tab">
-                                                                  <button class="tablinks" style="border: 3px">Home</button>
-                                                                  <button class="tablinks">Tin tức</button>
-                                                                  <button class="tablinks">Thời KB</button>
-                                                                  <button class="tablinks" style="background-color: rgba(61, 94, 243, 0.781); color:white">Xem điểm</button>
-                                                                  <button class="tablinks">Xem lịch thi</button>
-                                                                  <button class="tablinks">Sửa TT tài khoản</button>
-                                                                </div>
-                                                        </div>
-                                                        </div>
-                                                        <section id="center" style="height: 500px">
-                                                        
-                                                          <nav id="center_left" style="width:220px;height:502px; margin-right: auto">
-                                                            <p style="
-                                                            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(182, 242, 255, 0) 0.01%, #9EB6F3 100%);
-                                                            border: 1px solid #C1C1C1;
-                                                            box-sizing: border-box;
-                                                            height: 502px;
-                                                            width: 222px;
-                                                            "><br/>&nbsp;&nbsp;&nbsp;Chọn học kỳ:<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <a href="#" style="color: black">Học kỳ I</a><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                                                            <a href="#" style="color: red">Học kỳ II</a><br/><br/></p>
-                                                          </nav>
-                                                          
-                                                          <article>
-                                                              <table style="width:100%">
-                                                                  <caption style="font-size:20px;text-align: center"><b>BẢNG ĐIỂM</b></caption>
-                                                                  <tr style="font-size:15px;color:white;background-color: rgb(0, 0, 255);">
-                                                                    <th>Môn</th>
-                                                                    <th>M</th>
-                                                                  <th>KTDX</th>
-                                                                    <th>15'</th>
-                                                                  <th>1 tiết</th>
-                                                                  <th>Thi</th>
-                                                                  <th>Tổng kết</th>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <th>Toán</th>
-                                                                      <th>10</th>
-                                                                    <th>8</th>
-                                                                      <th>7</th>
-                                                                    <th>10</th>
-                                                                    <th>9</th>
-                                                                    <th></th>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <th>Vật Lý</th>
-                                                                      <th>0</th>
-                                                                    <th>2</th>
-                                                                      <th>10</th>
-                                                                    <th>6</th>
-                                                                    <th>5</th>
-                                                                    <th></th>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <th>Hóa Học</th>
-                                                                      <th></th>
-                                                                    <th>9</th>
-                                                                      <th>10</th>
-                                                                    <th>8</th>
-                                                                    <th></th>
-                                                                    <th></th>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <th>Sinh Học</th>
-                                                                      <th>9</th>
-                                                                    <th>10</th>
-                                                                      <th></th>
-                                                                    <th></th>
-                                                                    <th></th>
-                                                                    <th></th>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <th>Ngữ Văn</th>
-                                                                      <th>7</th>
-                                                                    <th>7</th>
-                                                                      <th></th>
-                                                                    <th></th>
-                                                                    <th></th>
-                                                                    <th></th>
-                                                                  </tr>
-                                                                  <tr>
-                                                                      <th>Lịch Sử</th>
-                                                                      <th></th>
-                                                                    <th></th>
-                                                                      <th></th>
-                                                                    <th></th>
-                                                                    <th></th>
-                                                                    <th></th>
-                                                                  </tr>
-                                                                </table>
-                                                                <p style="text-align: center"><a href="#"><u>In bảng điểm</u></a></p>
-                                                          </article>
-                                                         
-                                                        </section>
-                                                        </div>
-                                                    </div>
-                                              
-                                                
-                                                
-                                            
-                                          </div>
-                                                  
-                                                  
-                                                  
-                                      </div>
-                      </div>
-                  </div>
-                        
+                
+              <!-- Nav pills -->
+              <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="pill" href="#home" style="font-weight: bold; color:#7faac4">Requirement</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu0" style="font-weight: bold;">User Scenario</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu1" style="font-weight: bold;">Design</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="pill" href="#menu2" style="font-weight: bold;">Implementation</a>
+                </li>
+              </ul>
+            
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="home" class="container tab-pane active">
+                  <div style="font-size:15px;font-family:Tahoma;font-weight: bold;">Yêu cầu:</div> <p>(1) Tạo ra một user scenario
+                    <br/> (2) Chọn 1 bước trong user scenario để thiết kế 1 form giao diện
+                    Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương
+                    ứng cho thiết kế này.
+                    <br/> Upload lên Azure / Github: trong file html có chèn hình ảnh của
+                    user scenario ở (1) và đường dẫn của file thiết kế ở (2).</p>
                 </div>
+                <div id="menu0" class="container tab-pane fade text-center">
+                  <img src="images/lab2_Scenario.png" width="800px" height="400px"/>
+                </div>
+                <div id="menu1" class="container tab-pane fade">
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <p style="font-size: 15px;padding: 20px 0px; float: left;">Sketch:</p>
+                        <a href="images\lab2_paper.jpg" download><button type="button" class="btn btn-primary btn-sm" style="margin: 3% 0%;float: right;">Download</button></a>
+                        <img src="images\lab2_paper.jpg" width="100%" height="52%"><br/>
+                    </div>
+                    <div class="col-sm-6">
+                            <p style="font-size: 15px;margin: 20px 0px; float:left">Design:</p>
+                            <a href="17130179_design\lab2.fig"><button type="button" class="btn btn-primary btn-sm" style="margin: 3% 0%;float: right;">Download</button></a>
+                            <br/><br/>
+                      <img src="images\lab2_hinhfigma.png" width="100%"><br/>
+                    </div>
+                  </div>
+                  <hr/>
+            <div style="text-align: center">
+                    <div id="col1">
+                    <div id="col2">
+                      <a href="data_lab2.rar"><button type="button" class="btn btn-primary btn-sm" style="font-size: 155%;padding: 1% 2%;text-align: center;">Download All</button></a>  </div>
+                  </div>
+      </div>
+                </div>
+                <div id="menu2" class="container tab-pane fade">
+                  <div id="page" style="padding: 30px;">
+                    <img src="sources\lab2\images\header.PNG" width="100%">
+                  <div id="tab1" style="text-align: right;">
+                    <div id="tab1right" style="padding: 0px 20px;">
+                      <p><a href="#"><u>Chào Ngô Quang</u></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><u>Đăng xuất</u></a></p>
+                    </div>
+                  </div>
+                  <div id="tab2" style="text-align: left;">
+                      <div id="menuexcersice" style="padding: 10px 0px;">
+                          <div class="tab">
+                            <button class="tablinks" style="border: 3px">Home</button>
+                            <button class="tablinks">Tin tức</button>
+                            <button class="tablinks">Thời KB</button>
+                            <button class="tablinks" style="background-color: rgba(61, 94, 243, 0.781); color:white">Xem điểm</button>
+                            <button class="tablinks">Xem lịch thi</button>
+                            <button class="tablinks">Sửa TT tài khoản</button>
+                          </div>
+                  </div>
+                  </div>
+                  <section id="center" style="height: 500px">
+                  
+                    <nav id="center_left" style="width:220px;height:502px; margin-right: auto">
+                      <p style="
+                      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(182, 242, 255, 0) 0.01%, #9EB6F3 100%);
+                      border: 1px solid #C1C1C1;
+                      box-sizing: border-box;
+                      height: 502px;
+                      width: 222px;
+                      "><br/>&nbsp;&nbsp;&nbsp;Chọn học kỳ:<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="#" style="color: black">Học kỳ I</a><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="#" style="color: red">Học kỳ II</a><br/><br/></p>
+                    </nav>
+                    
+                    <article>
+                        <table style="width:100%">
+                            <caption style="font-size:20px;text-align: center"><b>BẢNG ĐIỂM</b></caption>
+                            <tr style="font-size:15px;color:white;background-color: rgb(0, 0, 255);">
+                              <th>Môn</th>
+                              <th>M</th>
+                            <th>KTDX</th>
+                              <th>15'</th>
+                            <th>1 tiết</th>
+                            <th>Thi</th>
+                            <th>Tổng kết</th>
+                            </tr>
+                            <tr>
+                                <th>Toán</th>
+                                <th>10</th>
+                              <th>8</th>
+                                <th>7</th>
+                              <th>10</th>
+                              <th>9</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                                <th>Vật Lý</th>
+                                <th>0</th>
+                              <th>2</th>
+                                <th>10</th>
+                              <th>6</th>
+                              <th>5</th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                                <th>Hóa Học</th>
+                                <th></th>
+                              <th>9</th>
+                                <th>10</th>
+                              <th>8</th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                                <th>Sinh Học</th>
+                                <th>9</th>
+                              <th>10</th>
+                                <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                                <th>Ngữ Văn</th>
+                                <th>7</th>
+                              <th>7</th>
+                                <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                            <tr>
+                                <th>Lịch Sử</th>
+                                <th></th>
+                              <th></th>
+                                <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                            </tr>
+                          </table>
+                          <p style="text-align: center"><a href="#"><u>In bảng điểm</u></a></p>
+                    </article>
+                   
+                  </section>
+                  </div>
+                    
+                </div>
+              </div>
             </div>
         </div>
 
